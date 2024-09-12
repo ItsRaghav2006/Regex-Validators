@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Notes -Download</title>
+</head>
+<body>
+    <!-- Spinner -->
+    <div id="loadingSpinner" class="spinner-overlay">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html">Regex Validator</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="notes.html">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Notes Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Download Regex Notes</h1>
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <img src="assets/pdfPre.webp" class="card-img-top" alt="PDF 1 Preview">
+                    <div class="card-body">
+                        <h5 class="card-title">Notes 1</h5>
+                        <p class="card-text">Description of PDF 1 content.</p>
+                        <a href="pdf/CPP Synopsis.pdf" download="notes1.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <img src="assets/pdfPre.webp" class="card-img-top" alt="PDF 2 Preview">
+                    <div class="card-body">
+                        <h5 class="card-title">Notes 2</h5>
+                        <p class="card-text">Description of PDF 2 content.</p>
+                        <a href="pdf/CPP Synopsis.pdf" download="notes2.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <img src="assets/pdfPre.webp" class="card-img-top" alt="PDF 3 Preview">
+                    <div class="card-body">
+                        <h5 class="card-title">Notes 3</h5>
+                        <p class="card-text">Description of PDF 3 content.</p>
+                        <a href="pdf/CPP Synopsis.pdf" download="notes3.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card bg-dark text-white">
+                    <img src="assets/pdfPre.webp" class="card-img-top" alt="PDF 4 Preview">
+                    <div class="card-body">
+                        <h5 class="card-title">Notes 4</h5>
+                        <p class="card-text">Description of PDF 4 content.</p>
+                        <a href="pdf/CPP Synopsis.pdf" download="notes4.pdf" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Assistant Circular Icon -->
+<div class="chatbot-icon" id="chatbotIcon" onclick="toggleChat()">
+    <img src="assets/assistant2.webp" alt="Chat Icon">
+</div>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+        <h4>Regex Assistant</h4>
+        <button class="btn btn-danger" onclick="toggleChat()">X</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <!-- Conversation will go here -->
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Ask me about Regex">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Spinner -->
+    <div id="loadingSpinner" class="spinner-overlay">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#">Regex Validators</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="notes.html">Notes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+    <h1 class="text-center">Welcome to Regex Validators</h1>
+    <p class="text-center">Choose a validator to test your input fields:</p>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <a href="email-validator.html" class="btn btn-outline-primary btn-block" >Email Validator</a>
+        </div>
+        <div class="col-md-4">
+            <a href="phone-validator.html" class="btn btn-secondary btn-block">Phone Validator</a>
+        </div>
+        <div class="col-md-4">
+            <a href="password-validator.html" class="btn btn-outline-success btn-block">Password Validator</a>
+        </div>
+        <div class="col-md-4">
+            <a href="aadhaar-validator.html" class="btn btn-primary btn-block" >Aadhaar Validator</a>
+        </div>
+        <div class="col-md-4">
+            <a href="username-validator.html" class="btn btn-outline-secondary btn-block">Username Validator</a>
+        </div>
+        <div class="col-md-4">
+            <a href="creditcard-validator.html" class="btn btn-success btn-block">Creditcard Validator</a>
+        </div>
+    </div>
+</div>
+
+<!-- Assistant Circular Icon -->
+<div class="chatbot-icon" id="chatbotIcon" onclick="toggleChat()">
+    <img src="assets/assistant2.webp" alt="Chat Icon">
+</div>
+
+<!-- Chat Window -->
+<div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+        <h4>Regex Assistant</h4>
+        <button class="btn btn-danger" onclick="toggleChat()">X</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+        <!-- Conversation -->
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="chatInput" placeholder="Ask me about Regex">
+        <button class="btn btn-success" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class=" text-white text-center py-3">
+    <p>&copy; 2024 Raghav Deshpande. All Rights Reserved.</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
