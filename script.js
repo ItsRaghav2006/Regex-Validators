@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const phone = document.getElementById('phone').value;
             const phoneError = document.getElementById('phoneError');
             const phoneSuccess = document.getElementById('phoneSuccess');
-            const phoneRegex = /^[0-9]{10}$/;
+            const phoneRegex = /[0-9]{10}$/;
             if (!phoneRegex.test(phone)) {
                 phoneError.textContent = 'Phone number must be 10 digits';
                 phoneError.style.visibility = 'visible';
@@ -269,5 +269,5 @@ function sendMessage() {
         const response = regexResponses[userMessage] || "Sorry, I don't know the answer to that. Try asking something else!";
         chatBody.innerHTML += `<div class="bot-message"><b>Assistant:</b> ${response}</div>`;
         chatBody.scrollTop = chatBody.scrollHeight;
-    }, 1000);
+    }, 2000);
 }
